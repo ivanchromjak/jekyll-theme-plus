@@ -1,0 +1,74 @@
+# Welcome to Plus!
+#
+# This config file affects your whole blog.
+# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
+# If you change this file, please restart the server process.
+
+# Site settings
+title:              Plus
+description:        Knowledge base Jekyll theme.
+url:                "https://plus.jekyll.plus" # Site base hostname & protocol, e.g. http://example.com
+baseurl:            "" # Site subpath, e.g. /blog
+logo:               "/assets/images/logo.jpg"
+permalink:          /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+date_format:        "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+paginate:	          5 # The number of posts to show per page on your blog page
+post_assets:        /assets/posts/ # Path to post content assets directory i.e post images, pdfs etc
+
+google_analytics:   # Google analytics code, get your code here https://www.google.com/analytics/
+google_maps_api_key: AIzaSyAJTeOhKq4HhEsEbUze__fAPDQswd0gUSU # Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
+
+disqus:
+    shortname:      # Disqus comments shortname, requires Disqus account https://disqus.com/
+
+footer:             # Default footer image settings
+    copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+
+
+# Author settings
+author:
+  name:           John Smith
+  bio:
+  url:
+  email:
+  website:
+  facebook:       https://www.facebook.com/
+  flickr:
+  dribbble:
+  github:
+  googleplus:
+  instagram:      https://www.instagram.com/
+  linkedin:
+  pinterest:
+  twitter:        https://twitter.com/
+  vimeo:          https://vimeo.com/
+  youtube:
+
+# Social share buttons
+twitter_username:   ivanchromjak
+github_username:    ivanchromjak
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-avatar
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - CHANGELOG
+  - LICENSE
+  - README
+  - /docs
+sass:
+  style:            compressed
+
+# collections:
