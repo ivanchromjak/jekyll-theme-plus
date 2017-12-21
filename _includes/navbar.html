@@ -1,0 +1,131 @@
+<div class="uk-container">
+    <div data-uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
+              {% if site.logo_image.light or site.logo_image.dark %}
+                {% if site.logo_image.light %}
+                  <img class="uk-logo-inverse" src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.light }}" alt="{{ site.title }}">
+                {% endif %}
+                {% if site.logo_image.dark %}
+                  <img src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.dark }}" alt="{{ site.title }}">
+                {% endif %}
+              {% else %}
+                {{ site.title }}
+              {% endif %}
+            </a>
+
+            <ul class="uk-navbar-nav uk-visible@m">
+                {% for link in site.data.navigation_navbar.left %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}>
+                          {% if link.url %}
+                            <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                          {% else %}
+                            <a href="#">{{ link.title }}</a>
+                          {% endif %}
+                          {% if link.dropdown != null %}
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                  {% for child in link.dropdown %}
+                                    {% if child.url contains 'http' %}
+                                        {% assign domain = '' %}
+                                    {% else %}
+                                        {% assign domain = relative_url %}
+                                    {% endif %}
+                                    {% if child.url == page.url %}
+                                        {% assign current = ' class="uk-active"' %}
+                                    {% else %}
+                                        {% assign current = null %}
+                                    {% endif %}
+                                    <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
+                                  {% endfor %}
+                                </ul>
+                            </div>
+                          {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                {% for link in site.data.navigation_navbar.right %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}>
+                          {% if link.url %}
+                            <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                          {% else %}
+                            <a href="#">{{ link.title }}</a>
+                          {% endif %}
+                          {% if link.dropdown != null %}
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                  {% for child in link.dropdown %}
+                                    {% if child.url contains 'http' %}
+                                        {% assign domain = '' %}
+                                    {% else %}
+                                        {% assign domain = relative_url %}
+                                    {% endif %}
+                                    {% if child.url == page.url %}
+                                        {% assign current = ' class="uk-active"' %}
+                                    {% else %}
+                                        {% assign current = null %}
+                                    {% endif %}
+                                    <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
+                                  {% endfor %}
+                                </ul>
+                            </div>
+                          {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            {% unless page.hero%}
+            <div>
+                <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                        <input id="navbar-search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                    <ul id="navbar-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                </div>
+            </div>
+            <script>
+            SimpleJekyllSearch({
+                searchInput: document.getElementById('navbar-search'),
+                resultsContainer: document.getElementById('navbar-search-results'),
+                noResultsText: '<li>No results found</li>',
+                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                json: '/search.json'
+            });
+            </script>
+            {% endunless %}
+
+            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+
+        </div>
+    </div>
+</div>
