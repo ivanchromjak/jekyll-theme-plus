@@ -1,0 +1,49 @@
+<footer class="uk-section uk-section-{{ site.footer.style | default: 'muted' }} uk-text-muted">
+  <div class="uk-container">
+    <div class="uk-grid-large uk-grid-margin-large" data-uk-grid>
+      <div class="uk-width-expand@l uk-width-1-2@m">
+        <div class="uk-margin">
+          <a class="uk-logo" href="{{ "/" | relative_url }}">
+            {% if site.logo_image.light or site.logo_image.dark %}
+              {% if site.logo_image.light %}
+                <img class="uk-logo-inverse" src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.light }}" alt="{{ site.title }}">
+              {% endif %}
+              {% if site.logo_image.dark %}
+                <img src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.dark }}" alt="{{ site.title }}">
+              {% endif %}
+            {% else %}
+              {{ site.title }}
+            {% endif %}
+          </a>
+        </div>
+        <div class="uk-margin uk-text-small copyright">{{ site.footer.copyright }}</div>
+        <div class="uk-margin">
+          <div data-uk-grid class="uk-child-width-auto uk-grid-small">
+            {% include social-networks.html %}
+          </div>
+        </div>
+      </div>
+      {% for column in site.data.footer.columns %}
+        <div class="uk-width-expand@l uk-width-1-2@m">
+          <h5>{{ column.title }}</h5>
+          <ul class="uk-list uk-text-small">
+            {% for link in column.links %}
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = relative_url %}
+              {% endif %}
+              {% if link.url == page.url %}
+                {% assign current = ' class="uk-active"' %}
+              {% else %}
+                {% assign current = null %}
+              {% endif %}
+              {% if link.title %}
+                <li{{ current }}><a class="uk-link-muted" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+</footer>

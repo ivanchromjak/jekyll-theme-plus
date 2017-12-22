@@ -1,0 +1,45 @@
+# Center style footer navigation
+center:
+  - title: Help
+    url: /
+
+  - title: Faq
+    url: /faq/
+
+  - title: Contact
+    url: /contact/
+
+# Columns style footer navigation
+columns:
+  - title: Company
+    links:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
+      - title: "Child Page A4"
+        url: /4
+
+  - title: Products
+    links:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
+      - title: "Child Page A4"
+        url: /4
+
+  - title: Contact
+    links:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
+      - title: "Child Page A4"
+        url: /4
