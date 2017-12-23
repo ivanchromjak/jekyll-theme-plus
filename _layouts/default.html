@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    {% assign width = page.width | default: site.width | default: 'single' %}
+    {% if width == 'left' %}
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-flex uk-grid-large" data-uk-grid>
+            <div class="uk-width-expand@m">
+              {{ content }}
+            </div>
+            <aside class="uk-width-1-3@m uk-flex-first@m">
+              {% include sidebar.html %}
+            </aside>
+          </div>
+        </div>
+      </div>
+    {% elsif width == 'right' %}
+      <div class="uk-section">
+        <div class="uk-container">
+          <div class="uk-grid-large" data-uk-grid>
+            <div class="uk-width-expand@m">
+              {{ content }}
+            </div>
+            <aside class="uk-width-1-3@m">
+              {% include sidebar.html %}
+            </aside>
+          </div>
+        </div>
+      </div>
+    {% elsif width == 'full' %}
+      {{ content }}
+    {% else %}
+      <div class="uk-section">
+        <div class="uk-container uk-container-small">
+          {{ content }}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if site.footer.layout == 'columns' %}
+      {% include footer-columns.html %}
+    {% else %}
+      {% include footer-center.html %}
+    {% endif %}
+
+    {% include offcanvas.html %}
+
+    </body>
+
+</html>

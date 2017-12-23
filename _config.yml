@@ -9,10 +9,12 @@ title:              Plus
 description:        Knowledge base Jekyll theme.
 url:                "https://plus.jekyll.plus" # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "" # Site subpath, e.g. /blog
-logo:               "/assets/images/logo.jpg"
+logo_image:
+  light:            logo-light.png
+  dark:             logo-dark.png
 permalink:          /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 date_format:        "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-paginate:	          5 # The number of posts to show per page on your blog page
+# paginate:	          5 # The number of posts to show per page on your blog page
 post_assets:        /assets/posts/ # Path to post content assets directory i.e post images, pdfs etc
 
 google_analytics:   # Google analytics code, get your code here https://www.google.com/analytics/
@@ -22,20 +24,29 @@ disqus:
     shortname:      # Disqus comments shortname, requires Disqus account https://disqus.com/
 
 footer:             # Default footer image settings
+    style:          secondary # default, muted, primary, secondary
+    layout:         columns # center or columns
     copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+
+# Style settings
+navbar:
+  background:       "#28a5f5" # color value e.g. "#28a5f5"
+  style:            dark
+  sticky:           false
 
 
 # Author settings
 author:
-  name:           John Smith
-  bio:
+  name:           Ivan Chromjak
+  avatar:         github
+  bio:            Some authorbio goest here.
   url:
   email:
   website:
   facebook:       https://www.facebook.com/
   flickr:
   dribbble:
-  github:
+  github:         ivanchromjak
   googleplus:
   instagram:      https://www.instagram.com/
   linkedin:
@@ -43,6 +54,25 @@ author:
   twitter:        https://twitter.com/
   vimeo:          https://vimeo.com/
   youtube:
+
+authors:
+  john:
+    name:           John Smith
+    avatar:         https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=300
+    bio:
+    url:
+    email:
+    website:
+    facebook:       https://www.facebook.com/
+    flickr:
+    dribbble:
+    github:
+    googleplus:
+    instagram:      https://www.instagram.com/
+    linkedin:
+    pinterest:
+    twitter:        https://twitter.com/
+    vimeo:          https://vimeo.com/
 
 # Social share buttons
 twitter_username:   ivanchromjak
@@ -72,3 +102,30 @@ sass:
   style:            compressed
 
 # collections:
+collections:
+  cards:
+    output: false
+  sidebars:
+    output: false
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      width: right
+      sidebar: post
+      comments: # true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      width: left
+      sidebar: page

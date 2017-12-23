@@ -1,0 +1,8 @@
+{% assign post_type = include.type | default: 'posts' %}
+{% assign post_limit = include.count | default: '8' %}
+
+<ul class="uk-list uk-list-large">
+{% for post in site[post_type] | limit: post_limit %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+{% endfor %}
+</ul>
