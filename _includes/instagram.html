@@ -1,0 +1,13 @@
+{% if site.instagram_accesstoken %}
+{% assign cols = include.cols | default: '4') %}
+  <div id="instagram" class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m" data-uk-grid></div>
+
+  <script type="text/javascript">
+    instafetch.init({
+      accessToken: '{{ site.instagram_accesstoken }}',
+      target: 'instagram',
+      numOfPics: 20,
+      caption: false
+    });
+  </script>
+{% endif %}
