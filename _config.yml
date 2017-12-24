@@ -23,6 +23,8 @@ google_maps_api_key: AIzaSyAJTeOhKq4HhEsEbUze__fAPDQswd0gUSU # Google maps API k
 disqus:
     shortname:      # Disqus comments shortname, requires Disqus account https://disqus.com/
 
+instagram_accesstoken: 6194289334.7c6ba07.3c31af607f8c481682e1643d91bd70de
+
 footer:             # Default footer image settings
     style:          secondary # default, muted, primary, secondary
     layout:         columns # center or columns
@@ -75,8 +77,13 @@ authors:
     vimeo:          https://vimeo.com/
 
 # Social share buttons
-twitter_username:   ivanchromjak
-github_username:    ivanchromjak
+social_share:
+  twitter:          true
+  facebook:         true
+  linkedin:         true
+  googleplus:       true
+  pinterest:        true
+  reddit:           true
 
 # Build settings
 markdown:           kramdown

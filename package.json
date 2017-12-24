@@ -14,6 +14,7 @@
   "homepage": "https://plus.jekyll.plus",
   "dependencies": {
     "instafetch.js": "^1.4.0",
+    "sharer.js": "^0.3.1",
     "simple-jekyll-search": "^1.5.0",
     "system-font-css": "^2.0.1",
     "uikit": "^3.0.0-beta.31"
@@ -27,9 +28,9 @@
   },
   "scripts": {
     "copy:sass": "ncp node_modules/uikit/src/scss/ _sass/vendor/uikit/ && ncp node_modules/system-font-css/ _sass/vendor/system-font-css/",
-    "copy:js": "cpx \"node_modules/uikit/dist/js/uikit.js\" assets/js/vendor/ && cpx \"node_modules/uikit/dist/js/uikit-icons.js\" assets/js/vendor/ && cpx \"node_modules/simple-jekyll-search/dest/simple-jekyll-search.js\" assets/js/vendor/ && cpx \"node_modules/instafetch.js/dist/instafetch.js\" assets/js/vendor/",
+    "copy:js": "cpx \"node_modules/uikit/dist/js/uikit.js\" assets/js/vendor/ && cpx \"node_modules/uikit/dist/js/uikit-icons.js\" assets/js/vendor/ && cpx \"node_modules/simple-jekyll-search/dest/simple-jekyll-search.js\" assets/js/vendor/ && cpx \"node_modules/instafetch.js/dist/instafetch.js\" assets/js/vendor/ && cpx \"node_modules/sharer.js/sharer.js\" assets/js/vendor/",
     "lint": "jshint assets/js/_main.js",
-    "uglify": "uglifyjs assets/js/vendor/uikit.js assets/js/vendor/uikit-icons.js assets/js/vendor/simple-jekyll-search.js assets/js/vendor/instafetch.js assets/js/_main.js -m -c -o assets/js/main.min.js",
+    "uglify": "uglifyjs assets/js/vendor/uikit.js assets/js/vendor/uikit-icons.js assets/js/vendor/simple-jekyll-search.js assets/js/vendor/instafetch.js assets/js/vendor/sharer.js assets/js/_main.js -m -c -o assets/js/main.min.js",
     "build": "npm run lint && npm run uglify",
     "watch": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build",
     "postinstall": "npm run copy:sass && npm run copy:js && npm run build"

@@ -1,0 +1,38 @@
+button.sharer {
+  border: none;
+  border-radius: 1px;
+  box-shadow: none;
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.8;
+  outline: none;
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button[data-sharer="twitter"] {
+  background-color: #00aced;
+}
+button[data-sharer="facebook"] {
+  background-color: #3b5998;
+}
+button[data-sharer="linkedin"] {
+  background-color: #007AB5;
+}
+button[data-sharer="googleplus"] {
+  background-color: #DD4C39;
+}
+button[data-sharer="email"] {
+  background-color: #444;
+}
+button[data-sharer="pinterest"] {
+  background-color: #CB2029;
+}
+button[data-sharer="reddit"] {
+  background-color: #CEE3F8;
+  color: #335f89;
+}

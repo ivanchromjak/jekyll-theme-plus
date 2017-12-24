@@ -1,0 +1,32 @@
+<div class="uk-child-width-auto uk-grid-small uk-grid uk-flex-center" data-uk-grid>
+  {% if site.social_share.twitter %}
+    <div>
+      <button class="sharer uk-button-small" data-sharer="twitter" data-title="{{ page.title }}" data-url="{{ page.url | absolute_url }}">Twitter</button>
+    </div>
+  {% endif %}
+  {% if site.social_share.facebook %}
+    <div>
+      <button class="sharer uk-button-small" data-sharer="facebook" data-url="{{ page.url | absolute_url }}">Facebook</button>
+    </div>
+  {% endif %}
+  {% if site.social_share.linkedin %}
+    <div>
+      <button class="sharer uk-button-small" data-sharer="linkedin" data-url="{{ page.url | absolute_url }}">Linkedin</button>
+    </div>
+  {% endif %}
+  {% if site.social_share.googleplus %}
+    <div>
+      <button class="sharer uk-button-small" data-sharer="googleplus" data-url="{{ page.url | absolute_url }}">Google+</button>
+    </div>
+  {% endif %}
+  {% if site.social_share.pinterest %}
+    <div>
+      <button class="sharer uk-button-small" data-sharer="pinterest" data-url="{{ page.url | absolute_url }}">Pinterest</button>
+    </div>
+  {% endif %}
+  {% if site.social_share.reddit %}
+    <div>
+      <button class="sharer uk-button-small" data-sharer="reddit" data-url="{{ page.url | absolute_url }}">Reddit</button>
+    </div>
+  {% endif %}
+</div>

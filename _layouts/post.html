@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="uk-section">
+    <div class="uk-container uk-container-small">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+
+            <div class="uk-article-content">
+                {{ content }}
+                {% if page.share %}
+                  <div class="share uk-text-center uk-margin-large-top">{% include share.html %}</div>
+                {% endif %}
+            </div>
+
+            <p class="uk-article-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                {{ page.date | date: date_format }}
+              </time>
+              {% if page.author %}
+                {% assign author = page.author %}
+              {% else %}
+                {% assign author = site.author.name %}
+              {% endif %}
+              by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>
+            </p>
+
+            {% include related.html %}
+
+            {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 135
+            });
+        </script>
+
+    </div>
+</div>
