@@ -39,63 +39,64 @@
     </nav>
   {% endif %}
 
-  <div class="uk-section">
-      <div class="uk-container">
-        <div class="uk-width-2-3@m uk-{{ page.header.color | default: 'dark' }} uk-text-{{ page.header.align | default: 'left' }} uk-align-{{ page.header.align | default: 'left' }}">
-          <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
-          {% if page.subtitle %}<p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>{% endif %}
-
-          {% if page.excerpt %}
-            <p class="uk-text-lead">{{ page.excerpt }}</p>
-          {% endif %}
-
-          <div class="uk-article-meta">
-              {% if page.id and site.author.name %}
-                  by {{ site.author.name }}
-              {% endif %}
-              {% if page.id and page.categories %}in
-                  {% for category in page.categories %}
-                      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-                      {% unless forloop.last %}{% endunless %}
-                  {% endfor %}
-              {% endif %}
-              {% if page.layout == 'about' and site.author.bio %}
-                  <div class="uk-container uk-container-small uk-margin-medium-top">
-                      {{ site.author.bio }}
-                  </div>
-              {% endif %}
-
-          </div>
-        </div>
-        {% if page.header.search %}
+  {% if page.header %}
+  <div class="uk-section uk-section-large">
+    <div class="uk-container">
+      <div class="uk-width-2-3@m uk-{{ page.header.color | default: 'dark' }} uk-text-{{ page.header.align | default: 'left' }} uk-align-{{ page.header.align | default: 'left' }}">
+        <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+        {% if page.subtitle %}
+          <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
+        {% endif %}
+        {% if page.excerpt %}
+          <p class="uk-text-lead">{{ page.excerpt }}</p>
+        {% endif %}
+      </div>
+      {% if page.header.search %}
         <div class="uk-width-1-2@m uk-align-{{ page.header.align | default: 'left' }}">
           <div class="hero-search">
+            <form class="uk-search uk-search-default uk-position-relative uk-width-1-1" onsubmit="return false;">
+              <span data-uk-search-icon></span>
+              <input id="search-input" class="uk-search-input" type="search" placeholder="Search for answers...">
+              <ul id="search-results" class="uk-position-absolute uk-width-1-1 uk-list uk-margin-small-top"></ul>
+            </form>
+            <script>
+              var searchInput = document.getElementById('search-input');
+              var searchResults = document.getElementById('search-results');
 
-              <!-- Html Elements for Search -->
-              <div class="uk-position-relative">
-                  <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
-                      <span data-uk-search-icon></span>
-                      <input id="hero-search" class="uk-search-input" type="search" placeholder="Search for answers...">
-                  </form>
-                  <ul id="hero-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-              </div>
+              searchInput.addEventListener('focusin', showResults, true);
+              searchInput.addEventListener('focusout', hideResults, true);
 
-              <script>
-              SimpleJekyllSearch({
-                  searchInput: document.getElementById('hero-search'),
-                  resultsContainer: document.getElementById('hero-search-results'),
+              function showResults() {
+
+                document.getElementById('search-results').style.display = '';
+
+                SimpleJekyllSearch({
+                  searchInput: document.getElementById('search-input'),
+                  resultsContainer: document.getElementById('search-results'),
                   noResultsText: '<li>No results found</li>',
                   searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                  limit: 100,
                   json: '/search.json'
-              });
-              </script>
-            </div>
+                });
+              }
+
+              function hideResults() {
+
+                document.addEventListener('click', function(event) {
+                  var isClickInside = searchResults.contains(event.target);
+                  var isClickInput = searchInput.contains(event.target);
+
+                  if ( !isClickInside && !isClickInput ) {
+                    searchResults.style.display = 'none';
+                  }
+                });
+
+              }
+            </script>
           </div>
-          {% endif %}
-
-      </div>
+        </div>
+      {% endif %}
+    </div>
   </div>
-
-
-
+  {% endif %}
 </header>
