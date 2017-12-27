@@ -6,7 +6,7 @@
 
 # Site settings
 title:              Plus
-description:        Knowledge base Jekyll theme.
+description:        Jekyll theme.
 url:                "https://plus.jekyll.plus" # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "" # Site subpath, e.g. /blog
 logo_image:
@@ -110,7 +110,7 @@ exclude:
   - LICENSE
   - README
   - /docs
-  
+
 sass:
   style:            compressed
 
