@@ -1,0 +1,115 @@
+// Theme variables
+$navbar-background:     #28a5f5;
+
+// Primary template color
+$global-primary-background: rgb(0, 160, 222);
+$global-secondary-background: rgb(27, 40, 49);
+
+// Custom variables
+$lh-l: 1.8;
+$border-light: #edeff1;
+$color-dark: #000;
+
+// $base-body-font-weight: 300;
+// $base-heading-font-weight: 300;
+$base-heading-color: #3c4346;
+$base-h2-line-height: 1.4;
+$base-link-hover-text-decoration: underline;
+$base-body-color: #75797b;
+
+$global-font-family: system-ui;
+$global-link-color: $global-primary-background;
+$global-link-hover-color: $global-primary-background;
+$global-xxlarge-font-size: 2rem;
+$global-xlarge-font-size: 1.75rem;
+$global-small-font-size: 0.875rem;
+$global-muted-color: #A9AAAB;
+
+$icon-link-color: $global-primary-background;
+$icon-link-hover-color: $color-dark;
+$icon-link-active-color: darken($global-primary-background, 5%);
+$link-muted-hover-color: #222;
+
+$container-max-width: 1100px;
+$container-small-max-width: 800px;
+$grid-large-gutter-horizontal: 100px;
+
+$card-small-body-padding-horizontal:            25px;
+$card-small-body-padding-vertical:              25px;
+
+$article-title-line-height: 1.4;
+
+$offcanvas-bar-color-mode: dark;
+$offcanvas-bar-background: #fff;
+
+$heading-hero-font-size: 1.6rem;
+$heading-hero-line-height: 1.3;
+$heading-hero-font-size-s: 2rem;
+$heading-hero-line-height-s: 1.3;
+$heading-hero-font-size-m: 2.5rem;
+$heading-hero-line-height-m: 1.4;
+
+//$navbar-background: #fff;
+$navbar-nav-item-color: $base-heading-color;
+$navbar-nav-item-hover-color: #000;
+$navbar-nav-item-active-color: #000;
+$navbar-nav-item-font-size: 13px;
+$navbar-nav-item-text-transform: uppercase !default;
+$navbar-toggle-color: $base-heading-color;
+$navbar-toggle-hover-color: #000;
+$subnav-item-font-size: $global-small-font-size;
+$subnav-item-text-transform: uppercase;
+
+// $search-color:                                       $global-color !default;
+// $search-placeholder-color:                           $global-muted-color !default;
+//
+// $search-icon-color:                                  $global-muted-color !default;
+//
+// $search-default-width:                               180px !default;
+// $search-default-height:                              $global-control-height !default;
+// $search-default-padding-horizontal:                  6px !default;
+$search-default-background:                          #fff;
+$search-default-focus-background:                    #fff;
+
+// $search-default-icon-width:                          $global-control-height !default;
+//
+// $search-navbar-width:                                400px !default;
+// $search-navbar-height:                               40px !default;
+// $search-navbar-background:                           transparent !default;
+// $search-navbar-font-size:                            $global-large-font-size !default;
+//
+// $search-navbar-icon-width:                           40px !default;
+//
+// $search-large-width:                                 500px !default;
+// $search-large-height:                                80px !default;
+// $search-large-background:                            transparent !default;
+// $search-large-font-size:                             $global-xxlarge-font-size !default;
+//
+// $search-large-icon-width:                            80px !default;
+//
+// $search-toggle-color:                                $global-muted-color !default;
+// $search-toggle-hover-color:                          $global-color !default;
+
+
+
+// $inverse-search-color:                          $base-body-color;
+// $inverse-search-placeholder-color:              $global-muted-color;
+// $inverse-search-icon-color:                     $global-muted-color;
+// $inverse-search-default-background:             #fff;
+// $inverse-search-default-focus-background:       #fff;
+
+// $search-navbar-width:                                400px !default;
+// $search-navbar-height:                               40px !default;
+//$search-navbar-background:                           #fff;
+// $search-navbar-font-size:                            $global-large-font-size !default;
+//
+// $search-navbar-icon-width:                           40px !default;
+//
+// $search-large-width:                                 500px !default;
+// $search-large-height:                                80px !default;
+//$search-large-background:                            #fff;
+// $search-large-font-size:                             $global-xxlarge-font-size !default;
+
+//$inverse-search-navbar-background:              #fff;
+
+//$inverse-search-large-background:               #fff;

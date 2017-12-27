@@ -19,8 +19,6 @@ columns:
         url: /2
       - title: Contact
         url: /contact/
-      - title: "Child Page A4"
-        url: /4
 
   - title: Products
     links:
@@ -30,8 +28,6 @@ columns:
         url: /2
       - title: Contact
         url: /contact/
-      - title: "Child Page A4"
-        url: /4
 
   - title: Contact
     links:
@@ -41,5 +37,3 @@ columns:
         url: /2
       - title: Contact
         url: /contact/
-      - title: "Child Page A4"
-        url: /4

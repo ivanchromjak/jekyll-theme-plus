@@ -10,7 +10,7 @@
               <canvas width="600" height="400"></canvas>
             </div>
             <div>
-              <div class="uk-card-body">
+              <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
                 <h3 class="uk-card-title">{{ card.title }}</h3>
                 <div class="uk-card-content">
                   {{ card.content }}
@@ -25,7 +25,7 @@
               <canvas width="600" height="400"></canvas>
             </div>
             <div>
-              <div class="uk-card-body">
+              <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
                 <h3 class="uk-card-title">{{ card.title }}</h3>
                 <div class="uk-card-content">
                 {{ card.content }}
@@ -38,7 +38,7 @@
             <div class="uk-card-media-top">
               <img src="{{ card.image }}" alt="{{ card.title }}">
             </div>
-            <div class="uk-card-body">
+            <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
               <h3 class="uk-card-title">{{ card.title }}</h3>
               <div class="uk-card-content">
               {{ card.content }}
@@ -47,7 +47,7 @@
           </div>
         {% elsif include.media == 'bottom' %}
         <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
-          <div class="uk-card-body">
+          <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
             <h3 class="uk-card-title">{{ card.title }}</h3>
             <div class="uk-card-content">
             {{ card.content }}
@@ -58,7 +58,7 @@
           </div>
         </div>
         {% else %}
-          <div class="uk-card uk-card-{{ include.style | default: 'default' }} uk-card-body uk-text-center">
+          <div class="uk-card uk-card-{{ include.style | default: 'default' }} uk-card-body uk-text-{{ include.align | default: 'left' }}">
             {% if card.icon %}
               <span data-uk-icon="icon: {{ card.icon }}; ratio: 2"></span>
             {% endif %}

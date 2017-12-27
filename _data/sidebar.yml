@@ -55,3 +55,16 @@ post:
           url: /docs/license/
         - title: "Terms &amp; Privacy Policy"
           url: /terms/
+
+page:
+  - widget: author
+    author: ivan
+
+  - widget: image
+    alt: Some img alt
+    url: https://source.unsplash.com/WLUHO9A_xik/800x500
+
+  - widget: recent
+    title: Recent Widget
+    type: cards
+    count: 4

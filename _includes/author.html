@@ -1,0 +1,96 @@
+{% if page.author and site.authors[page.author] %}
+  {% assign author = site.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
+<div itemprop="author" itemscope itemtype="http://schema.org/Person">
+
+  {% if author.avatar %}
+    <div class="uk-text-center">
+      {% if author.avatar == 'github' and author.github %}
+        {% avatar {{ author.github }} size=300 %}
+      {% else %}
+        <img class="avatar" src="{% if author.avatar contains 'http' %}{{ author.avatar }}{% else %}{{ site.post_assets | absolute_url }}{{ author.avatar }}{% endif %}" alt="{{ author.name }}">
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if author.name %}
+      <h3 class="uk-text-center" itemprop="name">{{ author.name }}</h3>
+  {% endif %}
+
+  {% if author.name %}
+      <p itemprop="description">{{ author.bio }}</p>
+  {% endif %}
+
+  <div class="uk-margin-small-top">
+      <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+          {% if author.twitter %}
+          <div class="uk-first-column">
+              <a href="{{ author.twitter }}" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.facebook %}
+          <div>
+              <a href="{{ author.facebook }}" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.flickr %}
+          <div>
+              <a href="{{ author.flickr }}" data-uk-icon="icon: flickr" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.dribbble %}
+          <div>
+              <a href="{{ author.dribbble }}" data-uk-icon="icon: dribbble" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.instagram %}
+          <div>
+              <a href="{{ author.instagram }}" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.googleplus %}
+          <div>
+              <a href="{{ author.googleplus }}" data-uk-icon="icon: google-plus" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.linkedin %}
+          <div>
+              <a href="{{ author.linkedin }}" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.pinterest %}
+          <div>
+              <a href="{{ author.pinterest }}" data-uk-icon="icon: pinterest" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.vimeo %}
+          <div>
+              <a href="{{ author.vimeo }}" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.youtube %}
+          <div>
+              <a href="{{ author.youtube }}" data-uk-icon="icon: youtube" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.github %}
+          <div>
+              <a href="{{ author.github }}" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.email %}
+          <div>
+              <a href="{{ author.email }}" data-uk-icon="icon: mail" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+          {% if author.website %}
+          <div>
+              <a href="{{ author.website }}" data-uk-icon="icon: link" class="uk-icon-link uk-icon" target="_blank"></a>
+          </div>
+          {% endif %}
+      </div>
+  </div>
+</div>

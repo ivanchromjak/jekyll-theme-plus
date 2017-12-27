@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "vendor/system-font-css/_system-font";
+@import "theme/_sharer";
+
+// 1. Custom variables and variable overwrites.
+@import "theme/variables";
+
+// 2. Import default variables and available mixins.
+@import "vendor/uikit/variables-theme";
+@import "vendor/uikit/mixins-theme";
+
+// 3. Custom mixin overwrites.
+@import "theme/mixins";
+
+// 4. Import UIkit.
+@import "theme/uikit";
+
+// 5. Other vendor styles
+@import "vendor/syntax-highlighting/github";

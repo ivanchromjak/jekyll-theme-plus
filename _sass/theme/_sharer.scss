@@ -12,8 +12,10 @@ button.sharer {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  }
 }
-
 button[data-sharer="twitter"] {
   background-color: #00aced;
 }

@@ -1,0 +1,28 @@
+# Navbar menu navigation links
+left:
+  - title: Help
+    url: /
+
+  - title: Faq
+    url: /faq/
+
+  - title: Contact
+    url: /contact/
+
+right:
+  - title: Dropdown
+    dropdown:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
+      - title: "Child Page A4"
+        url: /4
+
+  - title: Blog
+    url: /blog/
+
+  - title: Contact
+    url: /contact/

@@ -1,0 +1,8 @@
+{% assign cols = include.cols | default: '4') %}
+<div class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m" data-uk-grid>
+  {% for image in site.static_files %}
+      {% if image.path contains include.gallery %}
+          <div><img src="{{ image.path }}" alt="{{ image.basename | replace: '_', ' ' | capitalize }}"></div>
+      {% endif %}
+  {% endfor %}
+</div>

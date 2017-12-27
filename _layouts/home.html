@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+{% if page.category.columns %}
+    {% assign columns = page.category.columns %}
+{% else %}
+    {% assign columns = 3 %}
+{% endif %}
+
+<div class="uk-section uk-section-large uk-background-muted">
+    <div class="uk-container">
+        {% for section in site.data.navigation_categories %}
+            {% if section.heading %}
+                <h2 class="uk-text-center section-title">{{ section.heading }}</h2>
+            {% endif %}
+            <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center" data-uk-grid>
+            {% for category in section.categories %}
+                {% if category.title %}
+                {% assign posts = category | last %}
+                <div>
+                    <div id="{{ category.title | slugify }}-card" class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-card-body uk-inline card-category">
+                        <a class="uk-position-cover" href="#{{ category.title | slugify }}-container" data-uk-scroll="duration: 400; offset: 35;" onclick="filter('{{ category.title | slugify }}');"></a>
+                        {% if category.icon %}
+                        <span data-uk-icon="icon: {{ category.icon }}; ratio: 2" class=""></span>
+                        {% endif %}
+                        <h3 class="uk-card-title uk-margin">{{ category.title }}</h3>
+                        {% if category.desc %}
+                        <p>{{ category.desc }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-default">
+    <div class="uk-container">
+
+        <div class="">{{ content }}</div>
+
+        {% if page.featured.tag %}
+        <div class="">
+            {% if page.featured.title %}
+            <h2 class="">{{ page.featured.title }}
+                <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+            </h2>
+            {% endif %}
+            <ul class="uk-list uk-list-large link-icon-right">
+            {% for post in site.tags[page.featured.tag] %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <div id="category-section" class="uk-margin-large-top">
+            <hr>
+            {% for category in site.categories %}
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+
+            <div id="{{ category_name | slugify }}-container" class="category-container">
+                <h2 class="">{{ category_name }}
+                    <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+                </h2>
+                <ul class="uk-list uk-list-large link-icon-right uk-margin-remove">
+                {% for post in site.categories[category_name] %}
+                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<!--
+<div class="uk-section uk-section-primary">
+    <div class="uk-container uk-container-small">
+        <div class="uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 100">
+            <div class="uk-width-auto@m uk-first-column">
+                <h3 class="">Didn't find an answer to your question?</h3>
+            </div>
+            <div class="uk-width-expand@m">
+                <a class="uk-button uk-button-default" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+-->
