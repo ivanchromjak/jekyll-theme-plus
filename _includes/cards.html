@@ -1,74 +1,85 @@
-<div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-  {% assign cards = (site.cards | sort: 'card[slug]') %}
-  {% for card in cards %}
-    {% if card.slug contains include.id %}
-      <div>
-        {% if include.media == 'left' %}
-          <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-              <img src="{{ card.image }}" alt="{{ card.title }}" uk-cover>
-              <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-              <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
-                <h3 class="uk-card-title">{{ card.title }}</h3>
-                <div class="uk-card-content">
-                  {{ card.content }}
+{% if include.section -%}
+<div class="uk-section uk-section-medium uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
+  <div class="uk-container">
+{%- endif -%}
+    {%- if include.title -%}
+      <h2>{{- include.title -}}</h2>
+    {%- endif -%}
+    <div class="uk-child-width-expand@m uk-grid-match uk-grid-large" uk-grid>
+      {% assign cards = (site.cards | sort: 'card[slug]') %}
+      {% for card in cards %}
+        {% if card.slug contains include.id %}
+          <div>
+            {% if include.media == 'left' %}
+              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                  <img src="{{ card.image }}" alt="{{ card.title }}" uk-cover>
+                  <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">{{ card.title }}</h3>
+                    <div class="uk-card-content">
+                      {{ card.content }}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        {% elsif include.media == 'right' %}
-          <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-              <img src="{{ card.image }}" alt="{{ card.title }}" uk-cover>
-              <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-              <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
+            {% elsif include.media == 'right' %}
+              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                  <img src="{{ card.image }}" alt="{{ card.title }}" uk-cover>
+                  <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">{{ card.title }}</h3>
+                    <div class="uk-card-content">
+                    {{ card.content }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% elsif include.media == 'top' %}
+              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
+                <div class="uk-card-media-top">
+                  <img src="{{ card.image }}" alt="{{ card.title }}">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">{{ card.title }}</h3>
+                  <div class="uk-card-content">
+                  {{ card.content }}
+                  </div>
+                </div>
+              </div>
+            {% elsif include.media == 'bottom' %}
+            <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
+              <div class="uk-card-body">
                 <h3 class="uk-card-title">{{ card.title }}</h3>
                 <div class="uk-card-content">
                 {{ card.content }}
                 </div>
               </div>
-            </div>
-          </div>
-        {% elsif include.media == 'top' %}
-          <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
-            <div class="uk-card-media-top">
-              <img src="{{ card.image }}" alt="{{ card.title }}">
-            </div>
-            <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
-              <h3 class="uk-card-title">{{ card.title }}</h3>
-              <div class="uk-card-content">
-              {{ card.content }}
+              <div class="uk-card-media-bottom">
+                <img src="{{ card.image }}" alt="{{ card.title }}">
               </div>
             </div>
-          </div>
-        {% elsif include.media == 'bottom' %}
-        <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
-          <div class="uk-card-body uk-text-{{ include.align | default: 'left' }}">
-            <h3 class="uk-card-title">{{ card.title }}</h3>
-            <div class="uk-card-content">
-            {{ card.content }}
-            </div>
-          </div>
-          <div class="uk-card-media-bottom">
-            <img src="{{ card.image }}" alt="{{ card.title }}">
-          </div>
-        </div>
-        {% else %}
-          <div class="uk-card uk-card-{{ include.style | default: 'default' }} uk-card-body uk-text-{{ include.align | default: 'left' }}">
-            {% if card.icon %}
-              <span data-uk-icon="icon: {{ card.icon }}; ratio: 2"></span>
+            {% else %}
+              <div class="uk-card uk-card-{{ include.style | default: 'default' }} uk-card-body">
+                {% if card.icon %}
+                  <span data-uk-icon="icon: {{ card.icon }}; ratio: 2"></span>
+                {% endif %}
+                <h3 class="uk-card-title">{{ card.title }}</h3>
+                <div class="uk-card-content">
+                  {{ card.content }}
+                </div>
+              </div>
             {% endif %}
-            <h3 class="uk-card-title">{{ card.title }}</h3>
-            <div class="uk-card-content">
-              {{ card.content }}
-            </div>
           </div>
         {% endif %}
-      </div>
-    {% endif %}
-  {% endfor %}
+      {% endfor %}
+    </div>
+{% if include.section %}
+  </div>
 </div>
+{% endif %}

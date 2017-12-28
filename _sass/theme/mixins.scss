@@ -5,6 +5,7 @@
   }
 }
 $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
+
 //
 // Component: Base
 //
@@ -93,7 +94,7 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 //
 // ========================================================================
 @mixin hook-form(){
-    border: solid 1px #eee;
+    border: solid 1px $global-border;
 }
 
 //

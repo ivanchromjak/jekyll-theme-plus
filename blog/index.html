@@ -1,35 +1,17 @@
 ---
 layout: default
-title: Blog
+title: Events
+width: single
 ---
 
 <h1 class="uk-article-title">{{ page.title | escape }}</h1>
 
 {% for post in paginator.posts %}
 <article class="uk-article">
-    <a href="{{ post.url | relative_url }}"><img class="uk-width-1-1 uk-responsive-width" src="{{ post.image }}" alt="{{ page.title }}"></a>
+    {% if page.image %}
+      <a href="{{ post.url | relative_url }}"><img class="uk-width-1-1 uk-responsive-width" src="{{ post.image }}" alt="{{ post.title }}"></a>
+    {% endif %}
     <h2 class="uk-article-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    <div class="uk-article-meta uk-margin-small-bottom">
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-            {% if page.author %}
-              {% assign author = site.authors[page.author] %}
-            {% else %}
-              {% assign author = site.author %}
-            {% endif %}
-
-            <div class="uk-width-auto">
-                {% if author.github %}
-                    {% avatar {{ author.github }} size=40 %}
-                {% endif %}
-            </div>
-            <div class="uk-width-expand">
-                <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date | date_to_xmlschema }}">
-                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                    {{ post.date | date: date_format }}
-                </time></p>
-            </div>
-        </div>
-    </div>
     <div class="uk-article-content">
         {{ post.excerpt }}
     </div>

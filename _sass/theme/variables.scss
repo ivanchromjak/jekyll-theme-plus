@@ -1,15 +1,19 @@
 // Theme variables
-$navbar-background:     #28a5f5;
+
 
 // Primary template color
-$global-primary-background: rgb(0, 160, 222);
-$global-secondary-background: rgb(27, 40, 49);
+$global-primary-background: #7d45b1; //rgb(0, 160, 222);
+$global-secondary-background: #191c1f; //rgb(27, 40, 49);
+
+$base-heading-font-family:'Playfair Display', serif;;
+$base-heading-font-weight: bold;
+
 
 // Custom variables
 $lh-l: 1.8;
 $border-light: #edeff1;
 $color-dark: #000;
-
+$navbar-background:     $global-primary-background;
 // $base-body-font-weight: 300;
 // $base-heading-font-weight: 300;
 $base-heading-color: #3c4346;
@@ -24,6 +28,8 @@ $global-xxlarge-font-size: 2rem;
 $global-xlarge-font-size: 1.75rem;
 $global-small-font-size: 0.875rem;
 $global-muted-color: #A9AAAB;
+$global-border: #cccace;
+$border-rounded-border-radius: 0;
 
 $icon-link-color: $global-primary-background;
 $icon-link-hover-color: $color-dark;
@@ -31,7 +37,7 @@ $icon-link-active-color: darken($global-primary-background, 5%);
 $link-muted-hover-color: #222;
 
 $container-max-width: 1100px;
-$container-small-max-width: 800px;
+$container-small-max-width: 740px;
 $grid-large-gutter-horizontal: 100px;
 
 $card-small-body-padding-horizontal:            25px;
@@ -44,9 +50,9 @@ $offcanvas-bar-background: #fff;
 
 $heading-hero-font-size: 1.6rem;
 $heading-hero-line-height: 1.3;
-$heading-hero-font-size-s: 2rem;
+$heading-hero-font-size-s: 2.5rem;
 $heading-hero-line-height-s: 1.3;
-$heading-hero-font-size-m: 2.5rem;
+$heading-hero-font-size-m: 3.5rem;
 $heading-hero-line-height-m: 1.4;
 
 //$navbar-background: #fff;

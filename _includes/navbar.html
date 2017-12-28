@@ -16,7 +16,7 @@
             </a>
 
             <ul class="uk-navbar-nav uk-visible@m">
-                {% for link in site.data.navigation_navbar.left %}
+                {% for link in site.data.navbar.left %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
@@ -61,7 +61,7 @@
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
-                {% for link in site.data.navigation_navbar.right %}
+                {% for link in site.data.navbar.right %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
@@ -83,17 +83,21 @@
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                   {% for child in link.dropdown %}
-                                    {% if child.url contains 'http' %}
-                                        {% assign domain = '' %}
+                                    {% if child.url != null %}
+                                      {% if child.url contains 'http' %}
+                                          {% assign domain = '' %}
+                                      {% else %}
+                                          {% assign domain = relative_url %}
+                                      {% endif %}
+                                      {% if child.url == page.url %}
+                                          {% assign current = ' class="uk-active"' %}
+                                      {% else %}
+                                          {% assign current = null %}
+                                      {% endif %}
+                                      <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
                                     {% else %}
-                                        {% assign domain = relative_url %}
+                                      <li class="uk-nav-header">{{ child.title }}</li>
                                     {% endif %}
-                                    {% if child.url == page.url %}
-                                        {% assign current = ' class="uk-active"' %}
-                                    {% else %}
-                                        {% assign current = null %}
-                                    {% endif %}
-                                    <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
                                   {% endfor %}
                                 </ul>
                             </div>
@@ -103,7 +107,7 @@
                 {% endfor %}
             </ul>
 
-            {% unless page.header.search %}
+            {% unless page.header.search or site.navbar.search == false %}
               <div>
                   <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
                   <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">

@@ -24,7 +24,7 @@
 {% assign background_image = page.header.background_image %}
 <header class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background_overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background_color %}background-color: {{ page.header.background_color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.post_assets | absolute_url }}{{ background_image }}{% endif %});">
 {% else %}
-<header{% if page.header.background %} style="background-color: {{ page.header.background }}; "{% endif %}>
+<header{% if page.header.background_color %} style="background-color: {{ page.header.background_color }}; "{% endif %}>
 {% endif %}
 
   {% if sticky %}
@@ -48,7 +48,7 @@
           <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
         {% endif %}
         {% if page.excerpt %}
-          <p class="uk-text-lead">{{ page.excerpt }}</p>
+          <div class="uk-text-lead">{{ page.excerpt | markdownify }}</div>
         {% endif %}
       </div>
       {% if page.header.search %}

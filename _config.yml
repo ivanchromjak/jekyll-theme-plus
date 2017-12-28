@@ -38,9 +38,9 @@ footer:             # Default footer image settings
 # Style settings
 navbar:
   background:       "#28a5f5" # color value e.g. "#28a5f5"
-  style:            dark # text color, dark or light
-  sticky:           false
-
+  style:            light # text color, dark or light
+  sticky:           true
+  search:           false
 
 # Author settings
 author:
@@ -140,5 +140,5 @@ defaults:
       type: pages
     values:
       layout: page
-      width: left
+      width: single
       sidebar: page

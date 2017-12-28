@@ -1,0 +1,34 @@
+# Navbar menu navigation links
+left:
+
+right:
+  - title: About
+    url: /about/
+
+  - title: Services
+    url: /services/
+
+  - title: Events
+    url: /blog/
+
+  - title: Where
+    dropdown:
+      - title: Juristictions
+      - title: United States
+        url: /
+      - title: Pakistan
+        url: /
+      - title: India
+        url: /
+      - title: Kenya
+        url: /
+      - title: Libya
+        url: /
+      - title: Uganda
+        url: /
+
+  - title: Directory
+    url: /directory/
+
+  - title: Contact
+    url: /contact/

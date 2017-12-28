@@ -1,13 +1,23 @@
 {% if site.instagram_accesstoken %}
-{% assign cols = include.cols | default: '4') %}
-  <div id="instagram" class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m" data-uk-grid></div>
-
-  <script type="text/javascript">
-    instafetch.init({
-      accessToken: '{{ site.instagram_accesstoken }}',
-      target: 'instagram',
-      numOfPics: 20,
-      caption: false
-    });
-  </script>
+{% if include.section -%}
+<div class="uk-section uk-section-medium uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
+  <div class="uk-container">
+{%- endif -%}
+  {%- if include.title -%}
+    <h2>{{- include.title -}}</h2>
+  {%- endif -%}
+  {%- assign cols = include.cols | default: '4') -%}
+<div id="instagram" class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}" data-uk-grid></div>
+<script type="text/javascript">
+  instafetch.init({
+    accessToken: '{{ site.instagram_accesstoken }}',
+    target: 'instagram',
+    numOfPics: {{ include.count | default: '12' }},
+    caption: false
+  });
+</script>
+  {% if include.section %}
+    </div>
+  </div>
+  {% endif %}
 {% endif %}
