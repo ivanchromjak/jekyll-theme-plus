@@ -13,19 +13,19 @@ width: single
 
 ## Apostolic Council
 ### Apostle C. TyehimbaThonor-Kuykendall, II, D.D.
-#### Abbott / Presiding Prelate / Chief-Apostle
+##### Abbott / Presiding Prelate / Chief-Apostle
 Apostle Thonor-Kuykendall is non-denominational & Non-traditional ordained minister & consecrated bishop, consecrated with Apostolic Session as an apostle. He is the Senior Pastor of Prophetic Outreach Chapel/Cleveland-LRMG and Prophetic Chapel Pakistan-LRMG.
 
 ### Adjutant-Bishop David N.Greene
-#### General Secretary
+##### General Secretary
 Adjutant-Bishop David N. Greene is the Senior Pastor of The Hour of Deliverance Ministries (HODEM)-LRMG, a growing prophetic Church in Liberia, and the Overseer/ Pastor of The Life’s Ripples Ministries Global-LRMG, Liberia Charter.
 
 ### Apostle Shon
-#### Director of Religious Studies
+##### Director of Religious Studies
 Part of the Evangelistic Jurisdiction. He was appointed Director of Religious Studies in May 2012 & is a member of the Ordination Board, reaffirmed 25 October 2014.
 
 ### Apostle Cornelia Isaac
-#### Treasurer
+##### Treasurer
 Performs or oversees all of the financial record keeping functions and prepares the financial reports for the church.
 
 ### Bishop Kennedy Musungu
@@ -108,7 +108,7 @@ Fredrick S.Mutenyo | EIT (Evangelist In Training) |  | &#10003;
 Name | Title | Email | In Good Standing
 --- | --- | --- | ---
 Majid Ahmed | EIT (Evangelist In Training) |  | &#10003;
-Ghazala Majid | EIT (Evangelist In Training) |  | &#10003;
+Ghazala Majid | Evangelist |  | &#10003;
 Danish Zaman | EIT (Evangelist In Training) |  | &#10003;
 Waqar Sohail | EIT (Evangelist In Training) |  | &#10003;
 Amer Zeeshan | MIT (Minister In Training) |  | &#10003;
@@ -182,7 +182,7 @@ Ajay Masih | RIT (Reverend In Training) |  | &#10003;
 {: .uk-table .uk-table-divider}
 Name | Title | Email | In Good Standing
 --- | --- | --- | ---
-Sabeen Hidayat Chromjak | EIT (Evangelist In Training) | gillsabeen@yahoo.com | &#10003;
+Sabeen Hidayat Chromjak | Evangelist | gillsabeen@yahoo.com | &#10003;
 
 
 ## United Arab Emirates

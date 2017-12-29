@@ -1,13 +1,20 @@
 # Center style footer navigation
 center:
-  - title: Help
-    url: /
+  - title: Services
+    url: /services/
 
-  - title: Faq
-    url: /faq/
+  - title: Events
+    url: /blog/
+
+  - title: Juristictions
+    url: /juristictions/
+
+  - title: Directory
+    url: /directory/
 
   - title: Contact
     url: /contact/
+
 
 # Columns style footer navigation
 columns:

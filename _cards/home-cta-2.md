@@ -1,6 +1,6 @@
 ---
 title: Church Credentials
-image: https://source.unsplash.com/WLUHO9A_xik/800x500
+image: https://source.unsplash.com/QSa-uv4WJ0k/800x500
 ---
 
 Dignissim quis turpis quis, semper consequat vehicula dolor. Suspendisse tincidunt consequat quam, ac consequat posuere leo dapibus id

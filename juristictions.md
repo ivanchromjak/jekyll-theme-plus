@@ -1,69 +1,105 @@
 ---
 title: Juristictions
-description: Reaching nations through Ministry of God's word and preaching the gospel of Christ.
-image: /images/hero/pocc.jpg
 ---
 
-## Apostle C. Tyehimba Thonor-Kuykendall, II, D.D.
-Apostle Thonor-Kuykendall is the Abbott / Presiding Prelate / Chief-Apostle & Founder of the Life Ripples Ministries Global  Faith-Community, which provides Pastoral Care Services, Out-Reach Ministries & Worship Services to those without a pastor and or a church home. He is the Jurisdictional Overseer of the Evangelistic Jurisdiction (Mother Chapel). In addition, ministries across the globe that are a part of this faith-community, are all involved in Out-Reach Ministries. Life Ripples Ministries Global started July 1, 2007. Tyehimba is also the Assistant Chaplin PH.A Lodge Ecclesiastes # 120, and a member of the Rollers Prayer Team. The Rollers Prayer Team is one of the ministries under the Pastoral Care Tier.
+* TOC
+{:toc}
+{::options toc_levels="2" /}
 
-Tyehimba is the founder and CEO of the One2 One Organization.  This organization supports and motivates youth who have Individual Educational Plans (IEPs), and enhance parent/guardian involvement in their childís IEP. One2One Organization is now: One2One Educational Out-Reach Programs. It is one of the tiers of our LRMG ministries.
-He also served as a Volunteer Guardian for 3 adults that have been adjudicated Mentally Incompetent by Probate Court.  He had been a volunteer for this program through the Adult Guardianship Program for over 6 years. This is one of our ministries under our Pastoral Care Services Tier.
+## Prophetic Outreach Chapel Cleveland
 
-Tyehimba also worked in the Church Of God In Christ for decades in various capacities. Including but not limited to: singing in youth choir, the district choir. His trial sermon was @ Kinsman Rd C.O.G.I.C. under the leadership of the late Jessie L. Davis. He served in the Y.P.W.W. Department & also served as District Youth Pastor for 6 local churches in that district. Numerous other roles all of which were in an Out-Reach Ministry capacity.
+### Evangelitic Jurisdiction
+Apostle C. Tyehimba Thonor-Kuykendall, II, D.D. is the Jurisdictional Overseer. He is the Abbott/Presiding Prelate/Chief-Apostle of this Faith-Community.
 
-<br/>
-### C. T. Thonor-Kuykendall Credentials
+Bishop C. Tyehimba Thonor-Kuykendall, II, D.D. is the Overseer of the Evangelistic Jurisdiction. Evangelistic Jurisdiction is where the Spirit of the Living God is free to dwell in and among us to use us according to his purpose!
 
-{: .uk-table .uk-table-divider}
---- | --- | ---
-Ministerís License | Church of God in Christ, Inc | 08/15/1987
-The Degree of Associate of Applied Science in Community Services Technology | The University of Akron | 12/13/2003
-The Degree of Bachelor of Arts/Social Work | The University of Akron | 12/13/2003
-Ordained as Reverend | Universal Life Church Monastery | 08/09/2007
-A Doctor of Divinity Degree | Universal Life Church Monastery | 08/09/2007
-Ordained as Bishop | Universal Life Church Monastery | 04/12/2008
-Certificate of Episcopal Consecration | Christian Life International Ministries | 10/27/2012
-Certificate of Apostolic Affirmation | Christian Life International Ministries | 10/27/2012
+This is the Jurisdiction in which:
+1. The Mother Chapel (Headquarters) resides.
+2. Prophetic Outreach Chapel/Cleveland (POCC)-LRMG resides.
 
-### Our Pastor & 1st Lady
+### Our Chapel
+The chapel is a place where ALL are welcome! In 2012 the Lord called for the formation and operation of this chapel. If you like the smaller chapel where everybody knows your name, where you are missed when you are not there, a place, a place where you feel love, where YOU matter! Most importantly this a place where the presents of the Lord is here. Where miracles, healing, and The Word of God is preached.
 
-{% include image.html img="1stlady.webp" alt="Pastor and 1st Lady" %}
+This is a place where we welcome the Holy Spirit taking control of the services. Where the primary goal is winning souls for Jesus the Christ, and working with the saints to meet the condition to receive the gift of the indwelling of the Holy Spirit, with evidence of speaking-in-tongues.
 
-They have been married for 38 years, and have 3 grown children; and several grandchildren. The pastor and 1st lady are Saved, Sanctified, and Holy Spirit filled. This ministry started as an Outreach Ministry, that past our tracts on the street corners, bus stops, and provided services to those that didn't have a pastor i.e. funerals and weddings. During the same periods of time we were blessed to also start a radio broadcast ministry.
-Join E.I.T. 1st Lady as she has an Annual Women's Day Program. This is our way of celebrating the lives, gifts, tears, and joy that each every mother. We have a multi-program day or days which include but not limited to the following: bazaar, recognition of the mothers, worship service, and more.
-In addition, we are very grateful to E.I.T. 1st Lady for being the Sabbath School Leader. We look forward to her anointed insight, as she leads us through each lesson.
+We are a diverse and multi-cultural congregation, that come together with the freedom to praise the Lord. The freedom to tell of his goodness, sing our songs of praise in the Testimony Services. We obey Psalms 150.
 
-<br/>
-## Life Ripples Ministries Global Mission
-### Purpose
-This ministry seeks to reach the nations through Ministry of God's word, Preaching the gospel of Christ, supplying the Spirit of Jesus Christ through teachings of Christ, Planting chapels in the areas we Minister the word. We establish chapels and appoint Pastors & Overseers to give leadership to the chapel by enabling the Holy Spirit.
-Through Monastic Expressions & Teaching of Faith with an Evangelical Experience, bring God's church to its place of maturity. Establish the people-of-faith in the word of God, Serving neighborhoods with Christ.
+### Our History
+This ministry was started as an "Outreach Ministry" in 2007 by Abbott/Presiding-Prelate/Chief-Apostle C. Tyehimba Thonor-Kuykendall, II, D.D. He was lead to go out to the streets and pass out tracks & Our Daily Bread. Althouth the targeted area was E116th an Buckeye, he went up and down buckeye passing out tracks, praying for those that needed prayer, and counseling those that need this as well. All of this was accomplished by leading of the Holy Spirit.
 
-### Goals
-Through the church the nations to become the Kingdom of God and the chapel have a testimony and Obedience of Christ establish in the hearts of men. As a Religious Society (Faith-Community) & Higher Ecclesiastical Governing Body our Objectives and Mission are but, not limited to the following:
+The Out-Reach minister served those that didn't have a pastor or a church home. Hospital visits to pray for those requesting prayer. Home visits to check on those that were home-bound. Nursing home visits for thise that reside there. Also included pre-wedding counseling, alone with the matrimony service.
 
-### Objectives
-* Preach the Gospel
-* Establishing the teachings of Christ.
-* Supply the Spirit of Jesus the Christ
-* Bring the Prayer Ministry to the Church
-* Out-Reach Services
-* Pastoral Care Services (PCS)
-* Evangelism
-* Chapel/Mission Planting
-* Revivals
-* Youth Ministry (Young People In Mission Together)
-* Women Ministry (Women Working In Mission)
-* Fatherhood approach to working under the Anointing of the Holy Spirit
-* Unification
-* Pastoral Education/Training
-* Installment and or Removal of Pastors
-* Establishment of Global Prayer
-* Ordinations/Minister's License
-* Evangelist License
-* Establishment of Pastors Without Boarders (Missionaries)
-* Annual Spiritual Retreats & Crusades
+In 2013, the Lord called Abbott Thonor-Kuykendall to start pastoring inside a santuary as well as outside as an "Outreach Ministry." He gave us the name "Prophetic Outreach Chapel", and as a chapel of the Life Ripples Ministries Global; the -LRMG is added
 
-### Mission
-Prepare God's people for works of his service so that the body of Christ may be built up. For there to be ministry and more ministry in the church and the church not Lacking in Prophetic Ministry. Prepare for the transition to end of our mortal life and be prepared for immortality via the teachings of Jesus the Christ; and led by the Holy Spirit.
+In 2014, the Lord seeded a branch in Pakistan. The name of that ministry is called "Prophetic Chapel Pakistan-LRMG". Please keep this chapel in your prayers as many are experiencing a pentecostal worship service for the first time. Please pray for the ministry staff there that is being trained as well. As the Pakistan Jurisdiction expands, more technology and much patients is needed on all parties. Pray that the power of the Holy Spirit keeps superseeding all issues, and languages .
+
+### Ministries
+Our ministry is outreach based. We are not a chapel that exist between 4 walls, we have been commanded by the scriptures to "go out!" Our Mission Statement is found in Luke 14:23  "And the Lord said unto the servant, Go out into the highways and hedges, and compel them to come in, so that my house may be filled."
+
+#### Prayer
+If  you don't FAST you won't LAST, if you don't PRAY you won't STAY. Prayer is the key, and we are a praying faith family. We believe in tarry for the gift of the Holy Spirit. Not that we have to wait until it arrives, because it's already here. Nevertheless, we that it's neccessary to meet the "condition" in which we are able to receive the indwelling of th Holy Spirit. So through prayer and tarrying, we can ask God to come in and take "everything in us" thats stands in the way of us receiving this gift to be removed!
+
+####  Elders / Seniors
+We believe that our elers/seniors are jewels, and should be treated as such. As par of our "Outreach Ministry", we visit the eldery/seniors whereever they may reside. Not only visit but have service with them, including the Eucharist. It's important to remmber and honor their years of service given unto the Lord, and their faith-community. It doesn't matter what faith-community they belong to, if there is a spiritual need, we will try to fill it via the leading of the Holy Spirit! Let's NOT THROW our elderly/seniors way. See if you can SERVE them today!
+
+#### Sabbath School
+The book that we use for our Saturday School is from Union Gospel Press Publication, "Christian Life Series". They are by the quater based books. These books offer great lessons for our Christian Life. Our Saturday School Lessons offer plenty food for thought, and often very spirited classes. When is the lat time you were at Sunday/Saturday School?  Try it and see for yourself!
+
+#### Youth
+We are looking for a Praise Team Saved Volunteer Leader, and we are looking for youth to particpate as well!
+
+#### Music
+We take music to be a ministry as well. We celebrate the ways Psalms 150 says for us o do. We use modern technology for songs, we enjoy the way the saints use to do it, foot stumping and hanclapping. You might see a washboard too. We are looking for God to send someone that wants to serve God with the gift he has given them to be a musician. We wants someone that wants to join or local, rather than play or our local as a job.
+
+#### Community Service
+As part of our "Outreach Minisry", we have various bazaars: health, free clothes, free food, tracts arepase out as well. Some of the members serve as legal guarians for youth, for adults that have been ajudicated mentally incompetent to medical decisions fo themselves. We are involved in numerours projects throughout the year. We are all about being a "servant" of the Lord.
+
+We want everyone to come and worship the Lord with us. These are the different ways you can share in the worship experience with us. Come on into God's House the "House of Prayer!"
+
+#### Saturdays
+3:30pm Saturday School
+4:30pm Worship Service & Radio Broadcast
+
+#### 3rd, 4th & 5th tuesday nights
+6:30pm Prayer & Bible Study.
+
+#### 1st & 2nd Tuesday nights
+6:30pm Prayer & Tarrying Service.
+
+#### Radio Ministry Broadcasts
+BlogTalkRadio: [http://www.blogtalkradio.com/lrmg/](http://www.blogtalkradio.com/lrmg/)
+
+#### Evangelistic Outreach
+We have a ministry of distributing tracts, and or Our Daily Word. We might be in a neighborhood by you! You can call us and request a tract and or a Our Daily Word to be sent to you.
+
+#### Pastoral Care Program
+We have a ministry  of visiting the sick not only in the hospital, but in the nursing home, and in the family home as well. Nevertheless, there is "healing" in the "House of Prayer", the Lord's Hospital! We have an active healing and spiritual station called the POCC Infirmary Nurse Station.
+
+<hr>
+
+## Prophetic Outreach Chapel Pakistan
+...
+
+<hr>
+
+## Glory Miracles Celebration Jurisdiction Kenya
+Imani Children Centre-Orphanage (Imani means Faith).
+Glory Miracle Celebration Centre
+
+Nairobi, Kenya is the Foreign Mission / Ministry Headquarter of LRMG
+
+Bishop Kennedy W. Musungu is the Jurisdictional Overseer of Glory Miracle Celebration Jurisdiction. He is also the pastor of Glory Miracle Celebration Centre-LRMG in Nairobi, Kenya
+
+Rev Kennedy Musungu an orphan himself founded IMANI CHILDREN CENTRE.  Imani means -Faith. There are over 6 Pastors and churches in this Jurisdiction.
+
+<hr>
+
+## Hour Of Deliverance Ministries	Liberia
+* Food Distribution
+* CAP
+* Clothing Program
+* Water Development
+
+Overseer David Greene is the Jurisdictional Overseer of the Hour of Deliverance Jurisdiction, and the pastor of Hour of Deliverance Ministries-LRMG in Congo Town, Liberia  There are currently over 5 pastors in this jurisdiction.
+
+Musungu an orphan himself founded IMANI CHILDREN CENTRE.  Imani means -Faith. There are over 6 Pastors and churches in this Jurisdiction.

@@ -5,13 +5,13 @@
 # If you change this file, please restart the server process.
 
 # Site settings
-title:              Plus
+title:              LRMG
 description:        Jekyll theme.
 url:                "https://plus.jekyll.plus" # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "" # Site subpath, e.g. /blog
 logo_image:
-  light:            logo-light.png
-  dark:             logo-dark.png
+  light:            # logo-light.png
+  dark:             # logo-dark.png
 permalink:          /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 date_format:        "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 # paginate:	          5 # The number of posts to show per page on your blog page
@@ -28,11 +28,11 @@ google_maps_api_key: AIzaSyAJTeOhKq4HhEsEbUze__fAPDQswd0gUSU # Google maps API k
 disqus:
     shortname:      # Disqus comments shortname, requires Disqus account https://disqus.com/
 
-instagram_accesstoken: 6194289334.7c6ba07.3c31af607f8c481682e1643d91bd70de
+instagram_accesstoken: 1361941596.1677ed0.58119dea804549de96d313cfc870b3a7
 
 footer:             # Default footer image settings
     style:          secondary # default, muted, primary, secondary
-    layout:         columns # center or columns
+    layout:         center # center or columns
     copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
 
 # Style settings
@@ -44,22 +44,22 @@ navbar:
 
 # Author settings
 author:
-  name:           Ivan Chromjak
+  name:           Apostle C. Tyehimba Thonor-Kuykendall, II, D.D.
   avatar:         github
-  bio:            Some authorbio goest here.
+  bio:            Abbott / Presiding Prelate / Chief-Apostle & Founder of the Life Ripples Ministries Global Faith-Community.
   url:
-  email:
-  website:
-  facebook:       https://www.facebook.com/
+  email:          lifesripplesministriesglobal@yahoo.com
+  website:        https://lrmgfaith-community.com/
+  facebook:       https://www.facebook.com/PCPCleveland/
   flickr:
   dribbble:
-  github:         ivanchromjak
+  github:         pocclrmg
   googleplus:
   instagram:      https://www.instagram.com/
   linkedin:
   pinterest:
-  twitter:        https://twitter.com/
-  vimeo:          https://vimeo.com/
+  twitter:
+  vimeo:
   youtube:
 
 authors:
@@ -85,10 +85,10 @@ authors:
 social_share:
   twitter:          true
   facebook:         true
-  linkedin:         true
-  googleplus:       true
-  pinterest:        true
-  reddit:           true
+  linkedin:         false
+  googleplus:       false
+  pinterest:        false
+  reddit:           false
 
 # Build settings
 markdown:           kramdown
@@ -130,7 +130,7 @@ defaults:
     values:
       layout: post
       width: right
-      sidebar: post
+      width: single
       comments: # true
       share: true
       related: true

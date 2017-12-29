@@ -8,25 +8,19 @@ layout: default
 
   <div class="uk-article-content">
       {{ content }}
+
+      <div class="uk-article-meta uk-margin-top uk-margin-medium">
+        {% include post-meta.html %}
+      </div>
+
       {% if page.share %}
-        <div class="share uk-text-center uk-margin-large-top">{% include share.html %}</div>
+        <div class="share uk-text-center uk-margin-large">{% include share.html %}</div>
       {% endif %}
   </div>
 
-  <p class="uk-article-meta">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-      {{ page.date | date: date_format }}
-    </time>
-    {% if page.author %}
-      {% assign author = page.author %}
-    {% else %}
-      {% assign author = site.author.name %}
-    {% endif %}
-    by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>
-  </p>
-
-  {% include related.html %}
+  {% if post.related %}
+    {% include related.html %}
+  {% endif %}
 
   {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
 

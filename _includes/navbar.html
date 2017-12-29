@@ -38,17 +38,21 @@
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                   {% for child in link.dropdown %}
-                                    {% if child.url contains 'http' %}
-                                        {% assign domain = '' %}
+                                    {% if child.url != null %}
+                                      {% if child.url contains 'http' %}
+                                          {% assign domain = '' %}
+                                      {% else %}
+                                          {% assign domain = relative_url %}
+                                      {% endif %}
+                                      {% if child.url == page.url %}
+                                          {% assign current = ' class="uk-active"' %}
+                                      {% else %}
+                                          {% assign current = null %}
+                                      {% endif %}
+                                      <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
                                     {% else %}
-                                        {% assign domain = relative_url %}
+                                      <li class="uk-nav-header">{{ child.title }}</li>
                                     {% endif %}
-                                    {% if child.url == page.url %}
-                                        {% assign current = ' class="uk-active"' %}
-                                    {% else %}
-                                        {% assign current = null %}
-                                    {% endif %}
-                                    <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
                                   {% endfor %}
                                 </ul>
                             </div>

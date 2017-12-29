@@ -9,6 +9,7 @@ $base-heading-font-family:'Playfair Display', serif;;
 $base-heading-font-weight: bold;
 
 
+
 // Custom variables
 $lh-l: 1.8;
 $border-light: #edeff1;
@@ -24,8 +25,8 @@ $base-body-color: #75797b;
 $global-font-family: system-ui;
 $global-link-color: $global-primary-background;
 $global-link-hover-color: $global-primary-background;
-$global-xxlarge-font-size: 2rem;
-$global-xlarge-font-size: 1.75rem;
+// $global-xxlarge-font-size: 2rem;
+$global-xlarge-font-size: 2rem;
 $global-small-font-size: 0.875rem;
 $global-muted-color: #A9AAAB;
 $global-border: #cccace;
@@ -42,8 +43,13 @@ $grid-large-gutter-horizontal: 100px;
 
 $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
+$card-title-font-size: $global-xlarge-font-size;
 
+$article-title-font-size: $global-xlarge-font-size;
 $article-title-line-height: 1.4;
+
+$article-meta-font-size: 	0.8125rem;
+$article-meta-line-height: 1.3;
 
 $offcanvas-bar-color-mode: dark;
 $offcanvas-bar-background: #fff;

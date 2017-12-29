@@ -18,10 +18,12 @@ header:
     search: false
 ---
 
-{% include cards.html id="home-cta" style="primary" align="center" section="default" media="top" %}
+{% include cards.html id="home-cta" style="default" align="center" section="muted" %}
 
-{% include cards.html id="home-church" style="default" media="left" section="default" %}
+{% include cards.html id="home-church" style="secondary" media="left" section="default" %}
 
-{% include cards.html id="home-next" style="primary" align="center" section="default" %}
+{% include cards.html id="home-next" style="primary" align="center" section="muted" %}
+
+{% include cards.html id="home-broadcast" style="none" align="center" section="secondary" %}
 
 {% include instagram.html count="8" section="default" %}

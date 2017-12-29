@@ -7,7 +7,7 @@
 
     {% include header.html %}
 
-    {% assign width = page.width | default: site.width | default: 'single' %}
+    {% assign width = page.width | default: 'single' %}
     {% if width == 'left' %}
       <div class="uk-section">
         <div class="uk-container">

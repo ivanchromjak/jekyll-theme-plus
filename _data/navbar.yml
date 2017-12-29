@@ -3,7 +3,17 @@ left:
 
 right:
   - title: About
-    url: /about/
+    dropdown:
+      - title: Apostle C. Tyehimba
+        url: /apostle-c-tyehimba/
+      - title: Beliefs
+        url: /beliefs/
+      - title: Mission
+        url: /mission/
+      - title: Outreach
+        url: /outreach/
+      - title: Other
+        url: /other/
 
   - title: Services
     url: /services/
@@ -11,21 +21,8 @@ right:
   - title: Events
     url: /blog/
 
-  - title: Where
-    dropdown:
-      - title: Juristictions
-      - title: United States
-        url: /
-      - title: Pakistan
-        url: /
-      - title: India
-        url: /
-      - title: Kenya
-        url: /
-      - title: Libya
-        url: /
-      - title: Uganda
-        url: /
+  - title: Juristictions
+    url: /juristictions/
 
   - title: Directory
     url: /directory/
