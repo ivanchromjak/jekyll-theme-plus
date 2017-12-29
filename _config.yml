@@ -30,6 +30,12 @@ disqus:
 
 instagram_accesstoken: 1361941596.1677ed0.58119dea804549de96d313cfc870b3a7
 
+donations:
+  paypal:
+    text:           Donate # Button text
+    id:             4S57NC6W5UGSY #  PayPal button ID
+    navbar:         true
+
 footer:             # Default footer image settings
     style:          secondary # default, muted, primary, secondary
     layout:         center # center or columns
@@ -46,7 +52,7 @@ navbar:
 author:
   name:           Apostle C. Tyehimba Thonor-Kuykendall, II, D.D.
   avatar:
-    image:        
+    image:
     github:       pocclrmg
   bio:            Abbott / Presiding Prelate / Chief-Apostle & Founder of the Life Ripples Ministries Global Faith-Community
   url:

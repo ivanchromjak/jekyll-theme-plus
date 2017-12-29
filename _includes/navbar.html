@@ -133,6 +133,12 @@
               </script>
             {% endunless %}
 
+            {% if site.donations.paypal.navbar %}
+              <div class="uk-navbar-item">
+                  {% include donations-paypal.html %}
+              </div>
+            {% endif %}
+
             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
         </div>

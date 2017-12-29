@@ -78,6 +78,12 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         font-size: 1.1875rem;
         padding-left: 1.1875rem;
     }
+    .uk-button.donations {
+        padding: 0 $button-small-padding-horizontal;
+        line-height: $button-small-line-height;
+        font-size: $navbar-nav-item-font-size;
+        letter-spacing: 1px;
+    }
 }
 @mixin hook-navbar-nav-item(){
     text-transform: $navbar-nav-item-text-transform;
