@@ -20,11 +20,13 @@
                 {% endfor %}
             </ul>
         </div>
-        <div class="uk-margin-medium">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-                {% include social-networks.html %}
-            </div>
-        </div>
+        {% if site.social_networks %}
+          <div class="uk-margin-medium">
+              <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                  {% include social-networks.html %}
+              </div>
+          </div>
+        {% endif %}
         <div class="uk-margin-medium uk-text-small copyright">{{ site.footer.copyright }}</div>
 
     </div>

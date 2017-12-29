@@ -174,8 +174,9 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         }
     }
     .avatar {
-        margin-right: 10px;
-        float: left;
+        //margin-right: 10px;
+        //float: left;
+        max-width: 40px;
     }
 }
 @mixin hook-article-misc(){

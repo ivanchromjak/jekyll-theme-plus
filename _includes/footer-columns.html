@@ -17,11 +17,13 @@
           </a>
         </div>
         <div class="uk-margin uk-text-small copyright">{{ site.footer.copyright }}</div>
-        <div class="uk-margin">
-          <div data-uk-grid class="uk-child-width-auto uk-grid-small">
-            {% include social-networks.html %}
+        {% if site.social_networks %}
+          <div class="uk-margin">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small">
+              {% include social-networks.html %}
+            </div>
           </div>
-        </div>
+        {% endif %}
       </div>
       {% for column in site.data.footer.columns %}
         <div class="uk-width-expand@l uk-width-1-2@m">

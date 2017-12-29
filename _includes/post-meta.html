@@ -4,15 +4,31 @@
   {% assign author = site.author %}
 {% endif %}
 
-{% if author.github %}
-    {% avatar {{ author.github }} size=32 %}
-{% endif %}
+<div class="uk-article-meta uk-margin-top uk-margin-medium" itemscope itemtype="http://schema.org/Person">
+  <div data-uk-grid class="uk-child-width-auto uk-grid-small">
 
-{% if author.name %}
-    Written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author.name }}</span></span><br>
-{% endif %}
+    {% if author.avatar.image %}
+      <div>
+        <img class="avatar" src="{% if author.avatar.image contains 'http' %}{{ author.avatar.image }}{% else %}{{ site.post_assets | absolute_url }}{{ author.avatar.image }}{% endif %}" alt="{{ author.name }}" itemprop="image">
+      </div>
+    {% endif %}
 
-<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-    {{ page.date | date: date_format }}
-</time>
+    {% if author.avatar.github %}
+      <div>
+        {% avatar {{ author.avatar.github }} size=40 %}
+      </div>
+    {% endif %}
+
+    <div>
+      {% if author.name %}
+        Written by <span itemprop="name"><span itemprop="name"><strong>{{ author.name }}</strong></span></span>
+      {% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+          {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}
+      </time>
+      <br><span itemprop="description">{{ author.bio }}</span>
+    </div>
+
+  </div>
+</div>

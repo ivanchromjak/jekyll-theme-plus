@@ -9,9 +9,7 @@ layout: default
   <div class="uk-article-content">
       {{ content }}
 
-      <div class="uk-article-meta uk-margin-top uk-margin-medium">
-        {% include post-meta.html %}
-      </div>
+      {% include post-meta.html %}
 
       {% if page.share %}
         <div class="share uk-text-center uk-margin-large">{% include share.html %}</div>

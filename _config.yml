@@ -45,17 +45,19 @@ navbar:
 # Author settings
 author:
   name:           Apostle C. Tyehimba Thonor-Kuykendall, II, D.D.
-  avatar:         github
-  bio:            Abbott / Presiding Prelate / Chief-Apostle & Founder of the Life Ripples Ministries Global Faith-Community.
+  avatar:
+    image:        
+    github:       pocclrmg
+  bio:            Abbott / Presiding Prelate / Chief-Apostle & Founder of the Life Ripples Ministries Global Faith-Community
   url:
   email:          lifesripplesministriesglobal@yahoo.com
-  website:        https://lrmgfaith-community.com/
+  website:
   facebook:       https://www.facebook.com/PCPCleveland/
   flickr:
   dribbble:
-  github:         pocclrmg
+  github:
   googleplus:
-  instagram:      https://www.instagram.com/
+  instagram:      https://www.instagram.com/coveredundertheblood/
   linkedin:
   pinterest:
   twitter:
@@ -65,7 +67,7 @@ author:
 authors:
   john:
     name:           John Smith
-    avatar:         https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=300
+    avatar:
     bio:
     url:
     email:
@@ -75,7 +77,7 @@ authors:
     dribbble:
     github:
     googleplus:
-    instagram:      https://www.instagram.com/
+    instagram:      https://www.instagram.com/coveredundertheblood/
     linkedin:
     pinterest:
     twitter:        https://twitter.com/
@@ -89,6 +91,23 @@ social_share:
   googleplus:       false
   pinterest:        false
   reddit:           false
+
+# Social buttons
+social_networks:
+  email:          lifesripplesministriesglobal@yahoo.com
+  website:
+  facebook:       https://www.facebook.com/PCPCleveland/
+  flickr:
+  dribbble:
+  github:
+  googleplus:
+  instagram:      https://www.instagram.com/coveredundertheblood/
+  linkedin:
+  pinterest:
+  twitter:
+  vimeo:
+  youtube:
+
 
 # Build settings
 markdown:           kramdown
