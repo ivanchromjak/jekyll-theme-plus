@@ -1,0 +1,46 @@
+# Center style footer navigation
+center:
+  - title: Services
+    url: /services/
+
+  - title: Events
+    url: /blog/
+
+  - title: Jurisdictions
+    url: /jurisdictions/
+
+  - title: Directory
+    url: /directory/
+
+  - title: Contact
+    url: /contact/
+
+
+# Columns style footer navigation
+columns:
+  - title: Company
+    links:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
+
+  - title: Products
+    links:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
+
+  - title: Contact
+    links:
+      - title: "Child Page A1"
+        url: /1
+      - title: "Child Page A2"
+        url: /2
+      - title: Contact
+        url: /contact/
