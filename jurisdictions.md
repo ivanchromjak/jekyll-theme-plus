@@ -1,5 +1,5 @@
 ---
-title: Juristictions
+title: Jurisdictions
 ---
 
 * TOC

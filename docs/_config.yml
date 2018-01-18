@@ -7,7 +7,7 @@
 # Site settings
 title:              LRMG
 description:        Jekyll theme.
-url:                # Site base hostname & protocol, e.g. http://example.com
+url:                "https://jekyll.plus" # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "" # Site subpath, e.g. /blog
 logo_image:
   light:            # logo-light.png
