@@ -5,13 +5,13 @@
     {%- if include.title -%}
       <h2>{{- include.title -}}</h2>
     {%- endif -%}
-    <div class="uk-child-width-expand@m uk-grid-match uk-grid-large" uk-grid>
+    <div class="uk-child-width-expand@m uk-grid-match uk-grid-large- uk-flex-center" uk-grid>
       {% assign cards = (site.cards | sort: 'card[slug]') %}
       {% for card in cards %}
         {% if card.slug contains include.id %}
           <div>
             {% if include.media == 'left' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+              <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-card-media-left uk-cover-container">
                   <img src="{{ card.image }}" alt="{{ card.title }}" uk-cover>
                   <canvas width="600" height="400"></canvas>
@@ -26,7 +26,7 @@
                 </div>
               </div>
             {% elsif include.media == 'right' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+              <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
                   <img src="{{ card.image }}" alt="{{ card.title }}" uk-cover>
                   <canvas width="600" height="400"></canvas>
@@ -41,9 +41,13 @@
                 </div>
               </div>
             {% elsif include.media == 'top' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
+              <div class="uk-card uk-card-large- uk-border-rounded uk-box-shadow-large uk-card-{{ include.style }}">
                 <div class="uk-card-media-top">
+                  {% if card.icon %}
+                  <img class="icon uk-margin-medium-top" src="/assets/icons/{{ card.icon }}" alt="{{ card.title }}">
+                  {% elsif card.image %}
                   <img src="{{ card.image }}" alt="{{ card.title }}">
+                  {% endif %}
                 </div>
                 <div class="uk-card-body">
                   <h3 class="uk-card-title">{{ card.title }}</h3>
@@ -53,7 +57,7 @@
                 </div>
               </div>
             {% elsif include.media == 'bottom' %}
-            <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'default' }}">
+            <div class="uk-card uk-card-large uk-card-{{ include.style }}">
               <div class="uk-card-body">
                 <h3 class="uk-card-title">{{ card.title }}</h3>
                 <div class="uk-card-content">
@@ -65,7 +69,7 @@
               </div>
             </div>
             {% else %}
-              <div class="uk-card uk-card-{{ include.style | default: 'default' }} uk-card-body">
+              <div class="uk-card uk-card-{{ include.style }} uk-card-body">
                 {% if card.icon %}
                   <span data-uk-icon="icon: {{ card.icon }}; ratio: 2"></span>
                 {% endif %}

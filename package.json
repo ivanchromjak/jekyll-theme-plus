@@ -13,18 +13,18 @@
   },
   "homepage": "https://plus.jekyll.plus",
   "dependencies": {
-    "instafetch.js": "^1.4.0",
+    "instafetch.js": "^1.5.0",
     "sharer.js": "^0.3.1",
     "simple-jekyll-search": "^1.5.0",
     "system-font-css": "^2.0.1",
-    "uikit": "^3.0.0-beta.31"
+    "uikit": "^3.0.0-beta.40"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
     "jshint": "^2.9.5",
     "ncp": "latest",
     "onchange": "^3.3.0",
-    "uglify-js": "^3.2.1"
+    "uglify-js": "^3.3.16"
   },
   "scripts": {
     "copy:sass": "ncp node_modules/uikit/src/scss/ _sass/vendor/uikit/ && ncp node_modules/system-font-css/ _sass/vendor/system-font-css/",

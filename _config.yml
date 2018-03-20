@@ -5,13 +5,13 @@
 # If you change this file, please restart the server process.
 
 # Site settings
-title:              LRMG
-description:        Jekyll theme.
+title:              Plus
+description:        Multipurpose Jekyll theme.
 url:                # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "" # Site subpath, e.g. /blog
 logo_image:
-  light:            # logo-light.png
-  dark:             # logo-dark.png
+  light:            logo-light.svg
+  dark:             logo-dark.svg
 permalink:          /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 date_format:        "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 # paginate:	          5 # The number of posts to show per page on your blog page
@@ -33,8 +33,8 @@ instagram_accesstoken: 1361941596.1677ed0.58119dea804549de96d313cfc870b3a7
 donations:
   paypal:
     text:           Donate # Button text
-    id:             4S57NC6W5UGSY #  PayPal button ID
-    navbar:         true
+    id:             1234UUUUU #  PayPal button ID
+    navbar:         # true
 
 footer:             # Default footer image settings
     style:          secondary # default, muted, primary, secondary

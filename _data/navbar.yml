@@ -2,30 +2,28 @@
 left:
 
 right:
-  - title: About
+  - title: Home
+    url: /
+
+  - title: Components
     dropdown:
-      - title: Apostle C. Tyehimba
-        url: /apostle-c-tyehimba/
-      - title: Beliefs
-        url: /beliefs/
-      - title: Mission
-        url: /mission/
-      - title: Outreach
-        url: /outreach/
-      - title: Other
-        url: /other/
+      - title: Cards
+        url: /cards/
+      - title: Images
+        url: /images/
+      - title: Gallery
+        url: /gallery/
+      - title: Slideshow
+        url: /slideshow/
+      - title: Google Maps
+        url: /google-maps/
+      - title: Contact Form
+        url: /contact-form/
+      - title: Utilities
+        url: /utilities/
 
-  - title: Services
-    url: /services/
-
-  - title: Events
+  - title: Blog
     url: /blog/
 
-  - title: Jurisdictions
-    url: /jurisdictions/
-
-  - title: Directory
-    url: /directory/
-
-  - title: Contact
-    url: /contact/
+  - title: 404
+    url: /404/

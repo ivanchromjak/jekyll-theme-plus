@@ -1,0 +1,18 @@
+{% if include.section -%}
+<div class="uk-section uk-section-large uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
+  <div class="uk-container">
+{%- endif -%}
+
+      <div class="uk-grid-large- uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+          <div class="uk-width-3-4@m">
+              <h5 class="uk-text-large">{{ include.title }}</h5>
+          </div>
+          <div class="uk-width-1-4@m">
+              <a class="tm-button tm-button-xlarge" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
+          </div>
+      </div>
+
+{% if include.section %}
+  </div>
+</div>
+{% endif %}

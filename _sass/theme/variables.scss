@@ -2,12 +2,19 @@
 
 
 // Primary template color
-$global-primary-background: #7d45b1; //rgb(0, 160, 222);
+$global-primary-background: #2d9cff; //rgb(0, 160, 222);
 $global-secondary-background: #191c1f; //rgb(27, 40, 49);
+$global-success-background: #32d296;
+$global-warning-background: #faa05a;
+$global-danger-background: #f0506e;
 
-$base-heading-font-family:'Playfair Display', serif;;
+$base-heading-font-family: system-ui; //'Playfair Display', serif;;
 $base-heading-font-weight: bold;
 
+$section-success-background: $global-success-background;
+$section-success-color-mode: light;
+$section-danger-background: $global-danger-background;
+$section-danger-color-mode: light;
 
 
 // Custom variables
@@ -26,24 +33,25 @@ $global-font-family: system-ui;
 $global-link-color: $global-primary-background;
 $global-link-hover-color: $global-primary-background;
 // $global-xxlarge-font-size: 2rem;
-$global-xlarge-font-size: 2rem;
+$global-xlarge-font-size: 3rem;
+$global-large-font-size: 1.75rem;
 $global-small-font-size: 0.875rem;
 $global-muted-color: #A9AAAB;
 $global-border: #cccace;
-$border-rounded-border-radius: 0;
+//$border-rounded-border-radius: 4px;
 
 $icon-link-color: $global-primary-background;
 $icon-link-hover-color: $color-dark;
 $icon-link-active-color: darken($global-primary-background, 5%);
 $link-muted-hover-color: #222;
 
-$container-max-width: 1100px;
+//$container-max-width: 1100px;
 $container-small-max-width: 740px;
 $grid-large-gutter-horizontal: 100px;
 
 $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
-$card-title-font-size: $global-xlarge-font-size;
+//$card-title-font-size: $global-xlarge-font-size;
 
 $article-title-font-size: $global-xlarge-font-size;
 $article-title-line-height: 1.4;
@@ -54,12 +62,14 @@ $article-meta-line-height: 1.6;
 $offcanvas-bar-color-mode: dark;
 $offcanvas-bar-background: #fff;
 
-$heading-hero-font-size: 1.6rem;
-$heading-hero-line-height: 1.3;
-$heading-hero-font-size-s: 2.5rem;
-$heading-hero-line-height-s: 1.3;
-$heading-hero-font-size-m: 3.5rem;
-$heading-hero-line-height-m: 1.4;
+$heading-hero-font-size: 3.25rem;
+$heading-hero-line-height: 1.1;
+$heading-hero-font-size-s: 4.125rem;
+$heading-hero-line-height-s: 1.1;
+$heading-hero-font-size-m: 4.125rem;
+$heading-hero-line-height-m: 1.2;
+
+$text-lead-font-size: 1.375rem;
 
 //$navbar-background: #fff;
 $navbar-nav-item-color: $base-heading-color;

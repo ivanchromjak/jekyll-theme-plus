@@ -1,0 +1,70 @@
+# Features
+post:
+  - widget: author
+    author: ivan
+
+  - widget: button
+    title: Buy Now
+    style: primary
+    url: /contact/
+
+  - widget: image
+    alt: Some img alt
+    url: https://source.unsplash.com/WLUHO9A_xik/800x500
+
+  - widget: recent
+    title: Recent Widget
+    type: cards
+    count: 4
+
+  - widget: content
+    title: Content Widget
+    content: >
+      Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+      Cras a dui imperdiet, **metus** quis, pharetra turpis.
+
+  - widget: navigation
+    nav:
+    - title: Content
+      links:
+        - title: "Working with Posts"
+          url: /post62/
+        - title: "Working with Pages"
+          url: /docs/pages/
+        - title: "Working with Collections"
+          url: /docs/collections/
+        - title: "Helpers"
+          url: /docs/helpers/
+        - title: "Utility Classes"
+          url: /docs/utility-classes/
+    - title: Extras
+      links:
+        - title: "Stylesheets"
+          url: /docs/stylesheets/
+        - title: "JavaScript"
+          url: /docs/javascript/
+    - title: Meta
+      links:
+        - title: "History"
+          url: /docs/history/
+        - title: "Contributing"
+          url: /docs/contributing/
+        - title: "Old 2.2 Docs"
+          url: /docs/docs-2-2/
+        - title: "License"
+          url: /docs/license/
+        - title: "Terms &amp; Privacy Policy"
+          url: /terms/
+
+page:
+  - widget: author
+    author: ivan
+
+  - widget: image
+    alt: Some img alt
+    url: https://source.unsplash.com/WLUHO9A_xik/800x500
+
+  - widget: recent
+    title: Recent Widget
+    type: cards
+    count: 4

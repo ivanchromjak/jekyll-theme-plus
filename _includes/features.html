@@ -1,0 +1,35 @@
+{% if include.section -%}
+<div class="uk-section uk-section-large uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
+  <div class="uk-container">
+{%- endif -%}
+    {%- if include.title -%}
+      <h2 class="uk-margin-large-bottom">{{- include.title -}}</h2>
+    {%- endif -%}
+    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match" uk-grid>
+      {% assign cards = (site.cards | sort: 'card[slug]') %}
+      {% for card in cards %}
+        {% if card.slug contains include.id %}
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                {% if card.icon %}
+                <img class="icon" src="/assets/icons/{{ card.icon }}" alt="{{ card.title }}">
+                {% elsif card.image %}
+                <img src="{{ card.image }}" alt="{{ card.title }}">
+                {% endif %}
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">{{ card.title }}</h3>
+                <div class="uk-card-content">
+                {{ card.content }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+{% if include.section %}
+  </div>
+</div>
+{% endif %}
