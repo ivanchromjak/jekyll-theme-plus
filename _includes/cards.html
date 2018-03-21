@@ -3,7 +3,7 @@
   <div class="uk-container">
 {%- endif -%}
     {%- if include.title -%}
-      <h2>{{- include.title -}}</h2>
+      <h2 class="uk-margin-large-bottom">{{- include.title -}}</h2>
     {%- endif -%}
     <div class="uk-child-width-expand@m uk-grid-match uk-grid-large- uk-flex-center" uk-grid>
       {% assign cards = (site.cards | sort: 'card[slug]') %}

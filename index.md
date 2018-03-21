@@ -1,10 +1,11 @@
 ---
 layout: full
 width: full
-title: Build fast and more secure websites
+title: Build fast and secure websites with Jekyll
 excerpt: 'Multipurpose Jekyll theme. Create company or personal site and host on GitHub for free.
           <br><br>
-          <a class="tm-button tm-button-xlarge" href="https://github.com/ivanchromjak/jekyll-theme-plus/fork"><span uk-icon="github"></span> Fork on GitHub</a>'
+          <a class="uk-button uk-button-large uk-button-danger uk-box-shadow-medium hvr-up" href="https://github.com/ivanchromjak/jekyll-theme-plus/fork"><span uk-icon="github"></span> Fork on GitHub</a> &nbsp;
+          <a class="uk-button uk-button-large uk-button-light uk-box-shadow-medium hvr-up" href="https://github.com/ivanchromjak/jekyll-theme-plus/fork"><span uk-icon="copy"></span> Documentation</a>'
 navbar:
   sticky: true
   animation: true
@@ -20,7 +21,7 @@ header:
     search: false
 ---
 
-{% include cards.html id="home-why" style="default" media="top" section="muted" align="center" %}
+{% include cards.html id="home-why" style="default" media="top" section="muted" align="center" title="Why switch to Jekyll" %}
 
 {% include features.html id="feature" section="default" align="center" title="Awesome Features" %}
 

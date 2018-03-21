@@ -47,29 +47,25 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
   border-radius: 3px;
 }
 @mixin hook-button-misc() {
-  .tm-button {
-    display: inline-block;
-    border-radius: 3px;
-    background-color: #fff;
-    color: $global-primary-background !important;
-    border: solid 1px #fff;
-    //min-width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    transition: transform 100ms ease-in-out, box-shadow 100ms ease-in-out;
+  .hvr-up {
+    transition: transform 100ms ease-in-out;
     transform: translateY(0px);
     &:hover {
-      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
       transform: translateY(-2px);
       text-decoration: none;
     }
   }
   .tm-button-xlarge {
-    padding: 0 40px;
-    line-height: 64px;
+    padding: 0 20px;
+    line-height: 50px;
     font-size: 15px;
+  }
+  .uk-button-light {
+    background: #fff;
+    color: $global-primary-background !important;
+  }
+  .uk-button-danger.hvr-up:hover {
+    background: $global-danger-background;
   }
 }
 

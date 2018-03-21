@@ -24,7 +24,7 @@
 {% assign background_image = page.header.background_image %}
 <header class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background_overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background_color %}background-color: {{ page.header.background_color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.post_assets | absolute_url }}{{ background_image }}{% endif %});" data-uk-height-viewport>
 {% else %}
-<header{% if page.header.background_color %} style="background: {{ page.header.background_color }}; "{% endif %} data-uk-height-viewport->
+<header{% if page.header.background_color %} style="background: {{ page.header.background_color }}; "{% endif %} data-uk-height-viewport>
 {% endif %}
 
   {% if sticky %}
@@ -44,17 +44,17 @@
   <div class="uk-section uk-section-large">
     <div class="">
       <div data-uk-grid>
-        <div class="uk-width-2-3@m uk-{{ page.header.color | default: 'dark' }} uk-text-{{ page.header.align | default: 'left' }} *uk-align-{{ page.header.align | default: 'left' }}">
+        <div class="uk-width-2-3@m uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }} uk-text-{{ page.header.align | default: 'left' }} *uk-align-{{ page.header.align | default: 'left' }}">
           <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
           {% if page.subtitle %}
             <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
           {% endif %}
           {% if page.excerpt %}
-            <div class="uk-text-lead">{{ page.excerpt | markdownify }}</div>
+            <div class="uk-text-lead uk-margin-remove-bottom">{{ page.excerpt | markdownify }}</div>
           {% endif %}
         </div>
-        <div class="uk-width-1-3@m">
-          <img class="uk-width-1-1" src="/assets/icons/rocket.svg">
+        <div class="uk-width-1-3@m uk-visible@m">
+          <img class="uk-width-1-1" src="/assets/icons/rocket-2.svg">
         </div>
       </div>
       {% if page.header.search %}
