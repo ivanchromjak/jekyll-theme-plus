@@ -125,6 +125,7 @@ plugins:
   - jekyll-gist
   - jekyll-avatar
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 exclude:
   - Gemfile
