@@ -13,7 +13,7 @@
             {% if include.media == 'left' %}
               <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-card-media-left uk-cover-container">
-                  <img src="{{ item.image }}" alt="{{ item.title }}" uk-cover>
+                  <img src="src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.post_assets | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}" uk-cover>
                   <canvas width="600" height="400"></canvas>
                 </div>
                 <div>
@@ -28,7 +28,7 @@
             {% elsif include.media == 'right' %}
               <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                  <img src="{{ item.image }}" alt="{{ item.title }}" uk-cover>
+                  <img src="src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.post_assets | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}" uk-cover>
                   <canvas width="600" height="400"></canvas>
                 </div>
                 <div>
@@ -46,7 +46,7 @@
                   {% if item.icon %}
                   <img class="icon uk-margin-medium-top" src="/assets/icons/{{ item.icon }}" alt="{{ item.title }}">
                   {% elsif item.image %}
-                  <img src="{{ item.image }}" alt="{{ item.title }}">
+                  <img src="src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.post_assets | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}">
                   {% endif %}
                 </div>
                 <div class="uk-card-body">
@@ -65,7 +65,7 @@
                 </div>
               </div>
               <div class="uk-card-media-bottom">
-                <img src="{{ item.image }}" alt="{{ item.title }}">
+                <img src="src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.post_assets | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}">
               </div>
             </div>
             {% else %}
