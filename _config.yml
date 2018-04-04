@@ -141,7 +141,7 @@ sass:
 
 # collections:
 collections:
-  cards:
+  items:
     output: false
   sidebars:
     output: false
