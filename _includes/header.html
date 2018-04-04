@@ -40,10 +40,10 @@
   {% endif %}
 
   {% if page.header %}
-  <div class="header-wrapper uk-container uk-flex uk-flex-middle">
+  <div class="header-wrapper uk-container">
     <div class="uk-section uk-section-large">
       {% if page.header.align == 'center' %}
-        <div data-uk-grid class="uk-flex-center uk-text-center">
+        <div data-uk-grid class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
           <div class="uk-width-3-4@m uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }}">
             <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
             {% if page.subtitle %}
