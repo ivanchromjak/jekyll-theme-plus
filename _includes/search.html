@@ -1,0 +1,41 @@
+<div class="hero-search">
+  <form class="uk-search uk-search-default uk-position-relative uk-width-1-1" onsubmit="return false;">
+    <span data-uk-search-icon></span>
+    <input id="search-input" class="uk-search-input" type="search" placeholder="Search for answers...">
+    <ul id="search-results" class="uk-position-absolute uk-width-1-1 uk-list uk-margin-small-top"></ul>
+  </form>
+  <script>
+    var searchInput = document.getElementById('search-input');
+    var searchResults = document.getElementById('search-results');
+
+    searchInput.addEventListener('focusin', showResults, true);
+    searchInput.addEventListener('focusout', hideResults, true);
+
+    function showResults() {
+
+      document.getElementById('search-results').style.display = '';
+
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        noResultsText: '<li>No results found</li>',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        limit: 100,
+        json: '/search.json'
+      });
+    }
+
+    function hideResults() {
+
+      document.addEventListener('click', function(event) {
+        var isClickInside = searchResults.contains(event.target);
+        var isClickInput = searchInput.contains(event.target);
+
+        if ( !isClickInside && !isClickInput ) {
+          searchResults.style.display = 'none';
+        }
+      });
+
+    }
+  </script>
+</div>

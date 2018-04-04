@@ -18,7 +18,9 @@ header:
     background_overlay: true
     color: light
     align: left
-    search: false
+    search: true
+    height: full-
+    image: /assets/icons/rocket-2.svg
 ---
 
 {% include cards.html id="home-why" style="default" media="top" section="muted" align="center" title="Why switch to Jekyll" %}
